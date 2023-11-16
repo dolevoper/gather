@@ -31,5 +31,5 @@ export function onUpdate(callback) {
     callbacks.push(callback);
 }
 function emitUpdate() {
-    callbacks.forEach((callback) => callback());
+    setTimeout(() => callbacks.forEach((callback) => callback()));
 }

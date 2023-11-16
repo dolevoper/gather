@@ -57,5 +57,5 @@ export function onUpdate(callback: Function) {
 }
 
 function emitUpdate() {
-    callbacks.forEach((callback) => callback());
+    setTimeout(() => callbacks.forEach((callback) => callback()));
 }
